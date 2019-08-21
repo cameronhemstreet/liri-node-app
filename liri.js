@@ -101,7 +101,6 @@ var findMovie = function(movieName) {
   );
 };
 
-// Function for running a command based on text file
 var doWhatItSays = function() {
   fs.readFile("random.txt", "utf8", function(error, data) {
     console.log(data);
@@ -116,7 +115,6 @@ var doWhatItSays = function() {
   });
 };
 
-// Function for determining which command is executed
 var pick = function(caseData, functionData) {
   switch (caseData) {
   case "concert-this":
